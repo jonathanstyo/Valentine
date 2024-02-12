@@ -2,12 +2,12 @@ const yesBtn = document.getElementById('yes-btn');
 const noBtn = document.getElementById('no-btn');
 
 const randomMessages = [
-    "Are you sure you don't want to be my valentine?",
-    "Please be my valentine!",
-    "Don't break my heart, be my valentine!",
-    "I'll be waiting for you to change your mind!",
-    "Let's give love a chance, be my valentine!",
-    "My heart is yours, please be my valentine!"
+    "Sayanggg kok gituuu, be my valentine!",
+    "Ayolaaahh sayangkuuu, be my valentine!",
+    "Jangan bikin aku sadddd, be my valentine!",
+    "Yaudaa aku tungguin sampe mau pokoknya!",
+    "PWISPWISPWISPWISPWISSSS SAYANGGGGGKUUU",
+    "MWAHHHH I love you sayangkuuu say yes yah!"
 ];
 
 yesBtn.addEventListener('click', function() {

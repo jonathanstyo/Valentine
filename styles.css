@@ -6,7 +6,7 @@ body {
 }
 
 #valentine-img {
-    max-width: 100%;
+    max-width: 300%;
     height: auto;
     margin-top: 50px;
     /*outline: 2px solid black; /* Black outline for the image */
@@ -42,4 +42,39 @@ body {
     color: white;
     border: none;
     outline: 2px solid black; /* Black outline for buttons */
+}
+
+/* Additional styles for image movement */
+.happy-gif-left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: moveImageLeft 5s infinite alternate;
+}
+
+.happy-gif-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: moveImageRight 5s infinite alternate;
+}
+
+@keyframes moveImageLeft {
+    0% {
+        transform: translateX(-20px) translateY(-50%);
+    }
+    100% {
+        transform: translateX(20px) translateY(-50%);
+    }
+}
+
+@keyframes moveImageRight {
+    0% {
+        transform: translateX(20px) translateY(-50%);
+    }
+    100% {
+        transform: translateX(-20px) translateY(-50%);
+    }
 }

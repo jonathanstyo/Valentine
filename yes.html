@@ -3,27 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YAYYY I LOVE YOU</title>
+<title>I LOVE YOU SO MUCH</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #ffc0df;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
+    /* Additional styles for image movement */
+    .happy-gif-left {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        animation: moveImageLeft 5s infinite alternate;
     }
 
+    .happy-gif-right {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        animation: moveImageRight 5s infinite alternate;
+    }
+
+    @keyframes moveImageLeft {
+        0% {
+            transform: translateX(-20px) translateY(-50%);
+        }
+        100% {
+            transform: translateX(350px) translateY(-50%);
+        }
+    }
+
+    @keyframes moveImageRight {
+        0% {
+            transform: translateX(20px) translateY(-50%);
+        }
+        100% {
+            transform: translateX(-350px) translateY(-50%);
+        }
+    }
+
+    /* Centering h1 text */
     h1 {
-        margin-bottom: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 </style>
 </head>
 <body>
-<img src="img/happy.gif" alt="Happy GIF">
-<h1>YAYYY I LOVE YOU</h1>
-<img src="img/happy.gif" alt="Happy GIF">
+<img src="img/happy.gif" alt="Happy GIF" class="happy-gif-left">
+<h1>YAYYYYY I LOVEEE YOUUUUU</h1>
+<img src="img/happy.gif" alt="Happy GIF" class="happy-gif-right">
 </body>
 </html>
